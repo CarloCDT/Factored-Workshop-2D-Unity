@@ -153,11 +153,5 @@ public class PlayerMovement : Agent
             UIText.text = "Nice!";
             EndEpisode();
         }
-
-        if (other.TryGetComponent<Portal>(out Portal portal))
-        {
-            transform.position = new Vector3(11f, 6f, 0f);
-            movePoint.position = new Vector3(11f, 6f, 0f);
-        }
     }
 }
